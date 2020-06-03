@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    padding: 100px 0px 30px 0px;
+    text-align: center;
+}
+h2.gal-head::after {
+    display: block;
+    background: #343a40;
+    width: 70px;
+    height: 3px;
+}
+img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0px auto;
+    transition: .6s ease-in-out;
+}
+.col-md-4 {
+    padding: 5px;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+div.img {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin: 0px auto;
+}
+div.overlay {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background: rgba(33, 150, 243, 0.62);
+    margin: 0px auto;
+    z-index: 12;
+    transition: .6s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+div.col-md-4:hover div.overlay {
+    width: 300px;
+    height: 300px;
+    border-radius: 0%;
+}
+div.col-md-4:hover img {
+    transform: scale(1.2);
+}
